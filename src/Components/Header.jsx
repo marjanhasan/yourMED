@@ -25,6 +25,14 @@ const Header = () => {
           </li>
           <li>
             <NavLink
+              to="appointment"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Appointment
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="blog"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
@@ -90,6 +98,16 @@ const Header = () => {
                         }
                       >
                         Home
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="appointment"
+                        className={({ isActive }) =>
+                          isActive ? "active" : "default"
+                        }
+                      >
+                        Appointment
                       </NavLink>
                     </li>
                     <li>

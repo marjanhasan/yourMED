@@ -18,7 +18,7 @@ const DoctorsCard = ({ singleInfo }) => {
             {singleInfo.expertise}
           </p>
           <Link>
-            <button className="btn mt-3">Appoint Now</button>
+            <button className="btn mt-3">Doctor Details</button>
           </Link>
         </div>
       </div>
