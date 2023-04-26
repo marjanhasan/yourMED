@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import OurServiceCard from "./OurServiceCard";
+import DoctorsCard from "./DoctorsCard";
 
-const OurService = () => {
+const Doctors = () => {
   const [info, setInfo] = useState([]);
   useEffect(() => {
-    fetch("/service.json")
+    fetch("/doctors.json")
       .then((res) => res.json())
       .then((data) => setInfo(data));
   }, []);
   return (
     <div className="mt-6 md:mt-12">
       <h1 className="text-center text-3xl md:text-5xl font-semibold">
-        Our Services
+        Our Specialist
       </h1>
       <p className="text-center text-base text-gray-500 md:text-lg mt-4">
         Our Hospital Management Website is your gateway to top-notch healthcare
@@ -19,11 +19,11 @@ const OurService = () => {
       </p>
       <div className="my-container grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-8">
         {info.map((singleInfo, i) => (
-          <OurServiceCard key={i} singleInfo={singleInfo} />
+          <DoctorsCard key={i} singleInfo={singleInfo} />
         ))}
       </div>
     </div>
   );
 };
 
-export default OurService;
+export default Doctors;

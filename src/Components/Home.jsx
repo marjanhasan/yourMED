@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import ServiceCategory from "./ServiceCategory";
 import OurService from "./OurService";
+import Doctors from "./Doctors";
 
 const Home = () => {
   return (
@@ -40,7 +41,12 @@ const Home = () => {
           {/* Lottie Animation */}
           <div className="lg:w-1/2 ">
             <div className="w-full lg:w-4/5 lg:ml-auto">
-              <Player autoplay speed={1.5} loop src="/doctor.json"></Player>
+              <Player
+                autoplay
+                speed={1.5}
+                loop
+                src="/animeDoctor.json"
+              ></Player>
             </div>
           </div>
         </div>
@@ -49,6 +55,8 @@ const Home = () => {
       <ServiceCategory />
       {/* Our service section  */}
       <OurService></OurService>
+      {/* doctors list section  */}
+      <Doctors />
     </div>
   );
 };
