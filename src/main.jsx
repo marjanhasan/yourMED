@@ -8,6 +8,7 @@ import Home from "./Components/Home";
 import Blog from "./Components/Blog";
 import About from "./Components/About";
 import Appointment from "./Components/Appointment";
+import DoctorDetails from "./Components/DoctorDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "appointment",
         element: <Appointment />,
+      },
+      {
+        path: "/doctordetails/:id",
+        element: <DoctorDetails />,
       },
     ],
   },
