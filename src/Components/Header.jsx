@@ -31,6 +31,14 @@ const Header = () => {
               Blog
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="about"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              About Us
+            </NavLink>
+          </li>
         </ul>
         {/* button section  */}
         <Link to="/statistic" className="hidden lg:flex">
@@ -92,6 +100,16 @@ const Header = () => {
                         }
                       >
                         Blog
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="about"
+                        className={({ isActive }) =>
+                          isActive ? "active" : "default"
+                        }
+                      >
+                        About Us
                       </NavLink>
                     </li>
                   </ul>

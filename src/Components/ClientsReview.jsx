@@ -9,7 +9,7 @@ const ClientsReview = () => {
       .then((data) => setInfo(data));
   }, []);
   return (
-    <div className="mt-6 md:mt-12">
+    <div className="my-6 md:my-12">
       <h1 className="text-center text-3xl md:text-5xl font-semibold">
         Our Clients Review
       </h1>

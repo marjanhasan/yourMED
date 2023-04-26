@@ -1,27 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
-import ServiceCategory from "./ServiceCategory";
-import OurService from "./OurService";
-import Doctors from "./Doctors";
-import ClientsReview from "./ClientsReview";
+import { Link } from "react-router-dom";
 
-const Home = () => {
+const About = () => {
   return (
-    <div>
+    <div className="">
       {/* banner section  */}
       <div className="bg-cyan-100">
+        <h1 className="text-center text-3xl md:text-5xl font-semibold py-12">
+          About US
+        </h1>
         <div className="my-container flex flex-col items-center justify-between lg:flex-row h-full">
           {/* left side  */}
+          {/* Lottie Animation */}
+          <div className="lg:w-1/2 ">
+            <div className="w-full lg:w-4/5 lg:ml-auto">
+              <Player autoplay speed={1.5} loop src="/about.json"></Player>
+            </div>
+          </div>
+          {/* right side  */}
           <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
             <div className="max-w-xl mb-6 lg:mt-8">
               <h2 className="max-w-lg mb-6 font-sans lg:text-5xl font-bold tracking-tight text-gray-900 text-4xl sm:text-4xl sm:leading-none">
-                Your Health,
-                <br className="hidden md:block" /> Our Priority:
-                <br />
-                <span className="inline-block txt-color">
-                  Welcome to yourMED official Website!
-                </span>
+                We take care of your healthy life
               </h2>
               <p className="text-base text-gray-500 md:text-lg">
                 Our Hospital Management Website is your gateway to top-notch
@@ -38,30 +39,10 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          {/* right side  */}
-          {/* Lottie Animation */}
-          <div className="lg:w-1/2 ">
-            <div className="w-full lg:w-4/5 lg:ml-auto">
-              <Player
-                autoplay
-                speed={1.5}
-                loop
-                src="/animeDoctor.json"
-              ></Player>
-            </div>
-          </div>
         </div>
       </div>
-      {/* Available service category section  */}
-      <ServiceCategory />
-      {/* Our service section  */}
-      <OurService></OurService>
-      {/* doctors list section  */}
-      <Doctors />
-      {/* clients review section  */}
-      <ClientsReview />
     </div>
   );
 };
 
-export default Home;
+export default About;
