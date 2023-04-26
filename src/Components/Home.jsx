@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import ServiceCategory from "./ServiceCategory";
+import OurService from "./OurService";
 
 const Home = () => {
   return (
@@ -46,6 +47,8 @@ const Home = () => {
       </div>
       {/* Available service category section  */}
       <ServiceCategory />
+      {/* Our service section  */}
+      <OurService></OurService>
     </div>
   );
 };

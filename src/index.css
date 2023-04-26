@@ -8,6 +8,9 @@
 .btn {
   @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-700 hover:to-blue-800 transition duration-200 rounded shadow-md  md:mb-0 bg-blue-400 hover:bg-blue-700;
 }
+.btn-line {
+  @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-cyan-800 transition duration-200 rounded shadow-md  md:mb-0 border border-2 border-cyan-800 bg-cyan-100;
+}
 .btn-clicked {
   @apply inline-flex items-center h-12 px-6 mb-3 font-medium text-white transition duration-200 rounded shadow-md  md:mb-0 bg-green-500 hover:bg-green-700;
 }
