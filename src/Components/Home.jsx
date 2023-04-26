@@ -4,6 +4,7 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import ServiceCategory from "./ServiceCategory";
 import OurService from "./OurService";
 import Doctors from "./Doctors";
+import ClientsReview from "./ClientsReview";
 
 const Home = () => {
   return (
@@ -57,6 +58,8 @@ const Home = () => {
       <OurService></OurService>
       {/* doctors list section  */}
       <Doctors />
+      {/* clients review section  */}
+      <ClientsReview />
     </div>
   );
 };

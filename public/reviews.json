@@ -1,0 +1,20 @@
+[
+  {
+    "image": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+    "name": "John Doe",
+    "rating": 4.5,
+    "review": "I had a great experience with the hospital management system. The interface was user-friendly and the staff were helpful."
+  },
+  {
+    "image": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+    "name": "Jane Smith",
+    "rating": 5,
+    "review": "The hospital management system was a game-changer for our organization. It streamlined our processes and saved us a lot of time and resources."
+  },
+  {
+    "image": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+    "name": "Bob Johnson",
+    "rating": 3.5,
+    "review": "Overall, the hospital management system was good. However, there were some minor bugs that need to be fixed."
+  }
+]

@@ -3,7 +3,7 @@ import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
 const OurServiceCard = ({ singleInfo }) => {
   return (
-    <div className="bg-cyan-50 hover:bg-cyan-200 border-2 border-cyan-600 transition duration-200 rounded-md  flex flex-col justify-center py-6">
+    <div className="bg-cyan-50 border-2 border-cyan-600 transition duration-200 rounded-md  flex flex-col justify-center py-6">
       <div className="py-6 px-6">
         <div className="h-16 w-16 bg-cyan-100 flex items-center justify-center rounded-md">
           <img
