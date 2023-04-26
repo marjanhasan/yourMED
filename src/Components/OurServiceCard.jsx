@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const OurServiceCard = ({ singleInfo }) => {
   return (
@@ -16,10 +17,12 @@ const OurServiceCard = ({ singleInfo }) => {
         <p className="text-base text-gray-500 md:text-lg mt-1">
           {singleInfo.description}
         </p>
-        <button className="btn-line mt-3">
-          Learn More{" "}
-          <ArrowRightCircleIcon className="h-6 w-6 text-cyan-800 ml-2" />
-        </button>
+        <Link to="about">
+          <button className="btn-line mt-3">
+            Learn More{" "}
+            <ArrowRightCircleIcon className="h-6 w-6 text-cyan-800 ml-2" />
+          </button>
+        </Link>
       </div>
     </div>
   );

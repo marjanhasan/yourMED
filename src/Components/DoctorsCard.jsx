@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DoctorsCard = ({ singleInfo }) => {
   return (
@@ -16,6 +17,9 @@ const DoctorsCard = ({ singleInfo }) => {
           <p className="text-base text-gray-500 md:text-lg mt-1">
             {singleInfo.expertise}
           </p>
+          <Link>
+            <button className="btn mt-3">Appoint Now</button>
+          </Link>
         </div>
       </div>
     </>

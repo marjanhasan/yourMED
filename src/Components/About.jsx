@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="">
-      {/* banner section  */}
-      <div className="bg-cyan-100">
-        <h1 className="text-center text-3xl md:text-5xl font-semibold py-12">
-          About US
-        </h1>
+      <div className="bg-cyan-100 h-64 mb-16 text-4xl font-bold tracking-wide flex justify-center items-center">
+        About US
+      </div>
+      <div className="">
         <div className="my-container flex flex-col items-center justify-between lg:flex-row h-full">
           {/* left side  */}
           {/* Lottie Animation */}
