@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "service": "Doctors at work",
+    "services": 120
+  },
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/438/438506.png",
+    "service": "Happy Patients",
+    "services": 1500
+  },
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/1998/1998087.png",
+    "service": "Bed Facility",
+    "services": 500
+  },
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/2849/2849198.png",
+    "service": "Hospital Available",
+    "services": 75
+  }
+]
