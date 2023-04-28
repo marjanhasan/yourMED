@@ -12,6 +12,7 @@ import DoctorDetails from "./Components/DoctorDetails";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
 import Orders from "./Components/Orders";
+import AuthProviders from "./Providers/AuthProviders";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,5 +55,7 @@ const router = createBrowserRouter([
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <AuthProviders>
+    <RouterProvider router={router} />
+  </AuthProviders>
 );
