@@ -31,7 +31,7 @@ const About = () => {
                 partner in health and start your journey towards optimal
                 wellness today.
               </p>
-              <Link to="/blog" className="btn md:w-auto md:mr-4 mt-6">
+              <Link to="/register" className="btn md:w-auto md:mr-4 mt-6">
                 <div className="inline-flex items-center justify-center w-full h-full">
                   <p className="">Get Started</p>
                 </div>

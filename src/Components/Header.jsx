@@ -62,28 +62,23 @@ const Header = () => {
               About Us
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="login"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Login
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="register"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Register
-            </NavLink>
-          </li>
         </ul>
         {/* button section  */}
 
-        <button onClick={handleLogOut} className="btn hidden lg:flex">
-          Log Out
-        </button>
+        {user ? (
+          <button
+            onClick={handleLogOut}
+            className="inline-flex items-center h-12 px-6 mb-3 font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-700 hover:to-blue-800 transition duration-200 rounded shadow-md  md:mb-0 bg-blue-400 hover:bg-blue-700 hidden lg:flex"
+          >
+            Log Out
+          </button>
+        ) : (
+          <Link to="login">
+            <button className="inline-flex items-center h-12 px-6 mb-3 font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-700 hover:to-blue-800 transition duration-200 rounded shadow-md  md:mb-0 bg-blue-400 hover:bg-blue-700 hidden lg:flex">
+              Log In
+            </button>
+          </Link>
+        )}
         {/* mobile navbar section  */}
         <div className="lg:hidden">
           {/* dropdown open button  */}
