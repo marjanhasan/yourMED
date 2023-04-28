@@ -9,6 +9,9 @@ import Blog from "./Components/Blog";
 import About from "./Components/About";
 import Appointment from "./Components/Appointment";
 import DoctorDetails from "./Components/DoctorDetails";
+import Login from "./Components/Login";
+import Register from "./Components/Register";
+import Orders from "./Components/Orders";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,16 +27,28 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "orders",
+        element: <Orders />,
       },
       {
         path: "appointment",
         element: <Appointment />,
       },
       {
+        path: "about",
+        element: <About />,
+      },
+      {
         path: "/doctordetails/:id",
         element: <DoctorDetails />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },

@@ -1,13 +1,13 @@
 import React from "react";
 
-const Appointment = () => {
+const Login = () => {
   return (
     <div>
       <div className="bg-cyan-100 h-64 mb-16 text-4xl font-bold tracking-wide flex justify-center items-center">
-        Appointment
+        Login
       </div>
     </div>
   );
 };
 
-export default Appointment;
+export default Login;
