@@ -5,32 +5,39 @@ import { AuthContext } from "../Providers/AuthProviders";
 const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
   const [password, setPassword] = useState("");
   const { signIn, signInWithGoogle } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    const userName = form.name.value;
-    const userEmail = form.email.value;
-    const userPassword = form.password.value;
-    console.log(userName, userEmail, userPassword);
 
-    signIn(userEmail, userPassword)
+    signIn(email, password)
       .then((result) => {
+        setErrorMessage("");
         const loggedUser = result.user;
         form.reset();
       })
       .catch((error) => {
-        console.log(error);
+        setErrorMessage(error.message);
       });
+  };
+  const handleEmail = (e) => {
+    const input = e.target.value;
+    setEmail(input);
+  };
+  const handlePassword = (e) => {
+    const input = e.target.value;
+    setPassword(input);
   };
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
+        setErrorMessage("");
         const loggedUser = result.user;
       })
       .catch((error) => {
-        console.log(error);
+        setErrorMessage(error.message);
       });
   };
   return (
@@ -39,7 +46,7 @@ const Login = () => {
         Login
       </div>
       <form className="w-full max-w-sm mx-auto mb-5" onSubmit={handleSubmit}>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
             Name
           </label>
@@ -48,11 +55,10 @@ const Login = () => {
             id="name"
             type="text"
             placeholder="Enter your name"
-            required
             // value={name}
             // onChange={(e) => setName(e.target.value)}
           />
-        </div>
+        </div> */}
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
             Email
@@ -62,8 +68,9 @@ const Login = () => {
             id="email"
             type="email"
             placeholder="Enter your email"
-            // value={email}
-            // onChange={(e) => setEmail(e.target.value)}
+            required
+            value={email}
+            onChange={handleEmail}
           />
         </div>
         <div className="mb-6">
@@ -78,10 +85,12 @@ const Login = () => {
             id="password"
             type="password"
             placeholder="Enter your password"
-            // value={password}
-            // onChange={(e) => setPassword(e.target.value)}
+            required
+            value={password}
+            onChange={handlePassword}
           />
         </div>
+        {errorMessage && <span className="text-red-500">{errorMessage}</span>}
         <p className="mb-4">
           Don't have account?{" "}
           <Link to="/register" className="text-blue-600">
