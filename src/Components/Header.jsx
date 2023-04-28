@@ -30,26 +30,22 @@ const Header = () => {
               Home
             </NavLink>
           </li>
-          {user && (
-            <li>
-              <NavLink
-                to="appointment"
-                className={({ isActive }) => (isActive ? "active" : "default")}
-              >
-                Appointment
-              </NavLink>
-            </li>
-          )}
-          {user && (
-            <li>
-              <NavLink
-                to="orders"
-                className={({ isActive }) => (isActive ? "active" : "default")}
-              >
-                Orders
-              </NavLink>
-            </li>
-          )}
+          <li>
+            <NavLink
+              to="appointment"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Appointment
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="orders"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Orders
+            </NavLink>
+          </li>
           <li>
             <NavLink
               to="blog"

@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProviders";
 
 const Login = () => {
@@ -7,7 +7,12 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [password, setPassword] = useState("");
+  const [show, setShow] = useState(false);
   const { signIn, signInWithGoogle } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location.state?.from?.pathname || "/";
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -16,6 +21,7 @@ const Login = () => {
       .then((result) => {
         setErrorMessage("");
         const loggedUser = result.user;
+        navigate(from, { replace: true });
         form.reset();
       })
       .catch((error) => {
@@ -35,6 +41,7 @@ const Login = () => {
       .then((result) => {
         setErrorMessage("");
         const loggedUser = result.user;
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         setErrorMessage(error.message);
@@ -83,17 +90,22 @@ const Login = () => {
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-blue-500"
             id="password"
-            type="password"
+            type={show ? "text" : "password"}
             placeholder="Enter your password"
             required
             value={password}
             onChange={handlePassword}
           />
+          <p onClick={() => setShow(!show)}>
+            <small>
+              {show ? <span>Hide Password</span> : <span>Show Password</span>}
+            </small>
+          </p>
         </div>
         {errorMessage && <span className="text-red-500">{errorMessage}</span>}
         <p className="mb-4">
           Don't have account?{" "}
-          <Link to="/register" className="text-blue-600">
+          <Link to="/register" state={location.state} className="text-blue-600">
             Please Register
           </Link>
         </p>

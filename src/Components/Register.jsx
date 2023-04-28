@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProviders";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -10,6 +10,8 @@ const Register = () => {
   const [passwordError, setPasswordError] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const { user, createUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -25,6 +27,7 @@ const Register = () => {
         setErrorMessage("");
         const loggedUser = result.user;
         form.reset();
+        navigate(location.state.pathname || "/");
       })
       .catch((error) => {
         setErrorMessage(error.message);
@@ -114,7 +117,7 @@ const Register = () => {
         {errorMessage && <span className="text-red-500">{errorMessage}</span>}
         <p className="mb-4">
           Already have an account?{" "}
-          <Link to="/login" className="text-blue-600">
+          <Link to="/login" state={location.state} className="text-blue-600">
             Please Login
           </Link>
         </p>
