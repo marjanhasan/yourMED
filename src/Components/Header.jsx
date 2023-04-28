@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { AuthContext } from "../Providers/AuthProviders";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
   return (
     <div className="bg-cyan-100 ">
       <div className="flex items-center justify-between relative px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -23,22 +30,26 @@ const Header = () => {
               Home
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="appointment"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Appointment
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="orders"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Orders
-            </NavLink>
-          </li>
+          {user && (
+            <li>
+              <NavLink
+                to="appointment"
+                className={({ isActive }) => (isActive ? "active" : "default")}
+              >
+                Appointment
+              </NavLink>
+            </li>
+          )}
+          {user && (
+            <li>
+              <NavLink
+                to="orders"
+                className={({ isActive }) => (isActive ? "active" : "default")}
+              >
+                Orders
+              </NavLink>
+            </li>
+          )}
           <li>
             <NavLink
               to="blog"
@@ -73,9 +84,10 @@ const Header = () => {
           </li>
         </ul>
         {/* button section  */}
-        <Link to="/statistic" className="hidden lg:flex">
-          <button className="btn">Start Applying</button>
-        </Link>
+
+        <button onClick={handleLogOut} className="btn hidden lg:flex">
+          Log Out
+        </button>
         {/* mobile navbar section  */}
         <div className="lg:hidden">
           {/* dropdown open button  */}
