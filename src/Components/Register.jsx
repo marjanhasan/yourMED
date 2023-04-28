@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProviders";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -72,8 +73,14 @@ const Register = () => {
             // onChange={(e) => setPassword(e.target.value)}
           />
         </div>
+        <p className="mb-4">
+          Already have an account?{" "}
+          <Link to="/login" className="text-blue-600">
+            Please Login
+          </Link>
+        </p>
         <button className="btn w-full" type="submit">
-          Submit
+          Register
         </button>
       </form>
     </div>
