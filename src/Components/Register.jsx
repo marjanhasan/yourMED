@@ -12,6 +12,7 @@ const Register = () => {
   const { user, createUser } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -27,7 +28,7 @@ const Register = () => {
         setErrorMessage("");
         const loggedUser = result.user;
         form.reset();
-        navigate(location.state.pathname || "/");
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         setErrorMessage(error.message);
