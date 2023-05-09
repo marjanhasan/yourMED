@@ -1,7 +1,11 @@
 import React from "react";
+import { addToDb } from "../utilities/fakedb";
 
 const Medicines = ({ medicine }) => {
-  const { image, name, price, companyName } = medicine;
+  const { image, name, price, companyName, id } = medicine;
+  const handleAddToCart = (id) => {
+    addToDb(id);
+  };
   return (
     <div>
       <div className="w-full lg:w-1/2 md:flex items-center mx-auto mb-10 border-2 rounded-lg py-6">
@@ -15,7 +19,10 @@ const Medicines = ({ medicine }) => {
           </h2>
           <h2 className="font-medium text-lg mt-1">Price: ${price}</h2>
         </div>
-        <button className=" md:ml-6 md:mx-6 p-4 btn rounded-full">
+        <button
+          onClick={() => handleAddToCart(id)}
+          className=" md:ml-6 md:mx-6 p-4 btn rounded-full"
+        >
           Purchase
         </button>
       </div>

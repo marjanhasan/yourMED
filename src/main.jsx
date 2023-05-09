@@ -5,7 +5,6 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrrorPage from "./Components/ErrrorPage";
 import Home from "./Components/Home";
-import Blog from "./Components/Blog";
 import About from "./Components/About";
 import Appointment from "./Components/Appointment";
 import DoctorDetails from "./Components/DoctorDetails";
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "blog",
-        element: <Blog />,
-      },
-      {
         path: "others",
         element: (
           <PrivateRoutes>
@@ -44,6 +39,7 @@ const router = createBrowserRouter([
             <Appointment />
           </PrivateRoutes>
         ),
+        loader: () => fetch("/doctors.json"),
       },
       {
         path: "about",

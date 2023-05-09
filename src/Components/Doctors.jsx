@@ -6,7 +6,7 @@ const Doctors = () => {
   useEffect(() => {
     fetch("/doctors.json")
       .then((res) => res.json())
-      .then((data) => setInfo(data));
+      .then((data) => setInfo(data.doctor));
   }, []);
   return (
     <div className="mt-6 md:mt-12">

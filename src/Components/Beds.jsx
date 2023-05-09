@@ -1,7 +1,11 @@
 import React from "react";
+import { addToDb } from "../utilities/fakedb";
 
 const Beds = ({ bed }) => {
-  const { image, pricePerHour, pricePerDay, type } = bed;
+  const { image, pricePerHour, pricePerDay, type, id } = bed;
+  const handleAddToCart = (id) => {
+    addToDb(id);
+  };
   return (
     <div>
       <div className="w-full lg:w-1/2 md:flex items-center mx-auto mb-10 border-2 rounded-lg py-6">
@@ -17,8 +21,11 @@ const Beds = ({ bed }) => {
             Price/Day: ${pricePerDay}
           </h2>
         </div>
-        <button className=" md:ml-6 md:mx-6 p-4 btn rounded-full">
-          Purchase
+        <button
+          onClick={() => handleAddToCart(id)}
+          className="shrink-0 md:ml-6 md:mx-6 p-4 btn rounded-full"
+        >
+          Book Now
         </button>
       </div>
     </div>

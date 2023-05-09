@@ -4,9 +4,9 @@ import OurServiceCard from "./OurServiceCard";
 const OurService = () => {
   const [info, setInfo] = useState([]);
   useEffect(() => {
-    fetch("/service.json")
+    fetch("/doctors.json")
       .then((res) => res.json())
-      .then((data) => setInfo(data));
+      .then((data) => setInfo(data.service));
   }, []);
   return (
     <div className="mt-6 md:mt-12">

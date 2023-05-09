@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Medicines from "./Medicines";
 import Beds from "./Beds";
+import { addToDb } from "../utilities/fakedb";
 
 const ServiceDetails = () => {
   const dynamic = useParams();
@@ -9,15 +10,18 @@ const ServiceDetails = () => {
   // const [clicked, setClicked] = useState(0);
   let final = {};
   useEffect(() => {
-    fetch("/service.json")
+    fetch("/doctors.json")
       .then((res) => res.json())
-      .then((data) => setJd(data));
+      .then((data) => setJd(data.service));
   }, []);
   jd.find((d) => {
     if (d.id == dynamic.id) {
       final = { ...d };
     }
   });
+  const handleAddToCart = (id) => {
+    addToDb(id);
+  };
   const { id, image, title, details } = final;
   return (
     <div>
@@ -31,13 +35,17 @@ const ServiceDetails = () => {
             <p className="text-base text-gray-500 md:text-lg mb-4 text-justify">
               {details}
             </p>
-            <button className="btn">Appoint Now</button>
+            {id === "s4" || id === "s5" || id === "s3" || (
+              <button onClick={() => handleAddToCart(id)} className="btn">
+                Appoint Now
+              </button>
+            )}
           </div>
           <div className="bg-gray-200 h-fit w-fit overflow-hidden shrink-0 mx-5 lg:mx-10 rounded-lg">
             <img className="h-full w-full object-contain" src={image} alt="" />
           </div>
         </div>
-        {id === 4 && (
+        {id === "s4" && (
           <div>
             <div className="py-6">
               <h1 className="text-center text-3xl md:text-5xl font-semibold">
@@ -53,7 +61,7 @@ const ServiceDetails = () => {
             ))}
           </div>
         )}
-        {id === 5 && (
+        {id === "s5" && (
           <div>
             <div className="py-6">
               <h1 className="text-center text-3xl md:text-5xl font-semibold">

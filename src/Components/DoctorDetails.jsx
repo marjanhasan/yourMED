@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { addToDb } from "../utilities/fakedb";
 
 const DoctorDetails = () => {
   const dynamic = useParams();
@@ -9,13 +10,16 @@ const DoctorDetails = () => {
   useEffect(() => {
     fetch("/doctors.json")
       .then((res) => res.json())
-      .then((data) => setJd(data));
+      .then((data) => setJd(data.doctor));
   }, []);
   jd.find((d) => {
     if (d.id == dynamic.id) {
       final = { ...d };
     }
   });
+  const handleAddToCart = (id) => {
+    addToDb(id);
+  };
   const { id, doctorImage, name, speciality, description } = final;
   return (
     <div>
@@ -39,7 +43,9 @@ const DoctorDetails = () => {
             <p className="text-base text-gray-500 md:text-lg mb-2">
               {description}
             </p>
-            <button className="btn">Appoint Now</button>
+            <button onClick={() => handleAddToCart(id)} className="btn">
+              Appoint Now
+            </button>
           </div>
         </div>
       </div>

@@ -40,14 +40,6 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="blog"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Blog
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="about"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
@@ -127,16 +119,6 @@ const Header = () => {
                         }
                       >
                         Appointment
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="blog"
-                        className={({ isActive }) =>
-                          isActive ? "active" : "default"
-                        }
-                      >
-                        Blog
                       </NavLink>
                     </li>
                     <li>

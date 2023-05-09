@@ -1,44 +1,146 @@
-[
-  {
-    "id": 1,
-    "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
-    "name": "Dr. John Smith",
-    "speciality": "Cardiologist",
-    "description": "Dr. John Smith is a highly experienced cardiologist with over 20 years of experience in treating heart diseases. He specializes in complex procedures such as heart transplants and has helped save the lives of numerous patients."
-  },
-  {
-    "id": 2,
-    "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
-    "name": "Dr. Sarah Lee",
-    "speciality": "Dermatologist",
-    "description": "Dr. Sarah Lee is a board-certified dermatologist with a passion for skincare. She has helped countless patients achieve beautiful and healthy skin through her expertise in various treatments such as laser therapy and chemical peels."
-  },
-  {
-    "id": 3,
-    "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
-    "name": "Dr. Michael Chen",
-    "speciality": "Oncologist",
-    "description": "Dr. Michael Chen is a renowned oncologist who has dedicated his life to the fight against cancer. He has been at the forefront of cancer research and has helped develop new treatments that have saved countless lives."
-  },
-  {
-    "id": 4,
-    "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
-    "name": "Dr. Susan Kim",
-    "speciality": "Pediatrician",
-    "description": "Dr. Susan Kim is a compassionate and caring pediatrician who loves working with children. She has a special knack for putting children at ease and has helped many families navigate the challenges of childhood illnesses and development."
-  },
-  {
-    "id": 5,
-    "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
-    "name": "Dr. David Wong",
-    "speciality": "Neurologist",
-    "description": "Dr. David Wong is a leading neurologist who specializes in treating complex neurological disorders such as Parkinson's disease and multiple sclerosis. He has helped many patients regain their quality of life through his expertise in diagnosing and treating these conditions."
-  },
-  {
-    "id": 6,
-    "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
-    "name": "Dr. Emily Wang",
-    "speciality": "Psychiatrist",
-    "description": "Dr. Emily Wang is a compassionate psychiatrist who believes in taking a holistic approach to mental health. She has helped many patients overcome anxiety, depression, and other mental health issues through her expertise in psychotherapy and medication management."
-  }
-]
+{
+  "doctor": [
+    {
+      "id": "d1",
+      "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+      "name": "Dr. John Smith",
+      "appointed": "10th may",
+      "speciality": "Cardiologist",
+      "description": "Dr. John Smith is a highly experienced cardiologist with over 20 years of experience in treating heart diseases. He specializes in complex procedures such as heart transplants and has helped save the lives of numerous patients."
+    },
+    {
+      "id": "d2",
+      "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+      "name": "Dr. Sarah Lee",
+      "speciality": "Dermatologist",
+      "description": "Dr. Sarah Lee is a board-certified dermatologist with a passion for skincare. She has helped countless patients achieve beautiful and healthy skin through her expertise in various treatments such as laser therapy and chemical peels."
+    },
+    {
+      "id": "d3",
+      "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+      "name": "Dr. Michael Chen",
+      "speciality": "Oncologist",
+      "description": "Dr. Michael Chen is a renowned oncologist who has dedicated his life to the fight against cancer. He has been at the forefront of cancer research and has helped develop new treatments that have saved countless lives."
+    },
+    {
+      "id": "d4",
+      "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+      "name": "Dr. Susan Kim",
+      "speciality": "Pediatrician",
+      "description": "Dr. Susan Kim is a compassionate and caring pediatrician who loves working with children. She has a special knack for putting children at ease and has helped many families navigate the challenges of childhood illnesses and development."
+    },
+    {
+      "id": "d5",
+      "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+      "name": "Dr. David Wong",
+      "speciality": "Neurologist",
+      "description": "Dr. David Wong is a leading neurologist who specializes in treating complex neurological disorders such as Parkinson's disease and multiple sclerosis. He has helped many patients regain their quality of life through his expertise in diagnosing and treating these conditions."
+    },
+    {
+      "id": "d6",
+      "doctorImage": "https://img.freepik.com/free-vector/doctor-background-design_1270-62.jpg?w=740&t=st=1682479634~exp=1682480234~hmac=e191ef91114636ec2ec549c2b1aa6f49135aaa64ac06160f393a859cdb5a855ejpg",
+      "name": "Dr. Emily Wang",
+      "speciality": "Psychiatrist",
+      "description": "Dr. Emily Wang is a compassionate psychiatrist who believes in taking a holistic approach to mental health. She has helped many patients overcome anxiety, depression, and other mental health issues through her expertise in psychotherapy and medication management."
+    }
+  ],
+  "service": [
+    {
+      "id": "s1",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+      "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
+      "title": "Free Checkup",
+      "name": "Free Checkup",
+      "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+      "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
+    },
+    {
+      "id": "s2",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+      "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
+      "title": "24/7 Ambulance",
+      "name": "Emergency Ambulance",
+      "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+      "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
+    },
+    {
+      "id": "s3",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+      "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
+      "title": "Experts Consultancy",
+      "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+      "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
+    },
+    {
+      "id": "s4",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+      "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
+      "title": "Medicines",
+      "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+      "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive.",
+      "medicines": [
+        {
+          "id": "m1",
+          "image": "https://www.digitalhealth.net/wp-content/uploads/2022/10/Medicines-Management-Header.jpg",
+          "name": "Aspirin",
+          "price": 10.99,
+          "companyName": "Bayer"
+        },
+        {
+          "id": "m2",
+          "image": "https://www.digitalhealth.net/wp-content/uploads/2022/10/Medicines-Management-Header.jpg",
+          "name": "Ibuprofen",
+          "price": 8.99,
+          "companyName": "Advil"
+        },
+        {
+          "id": "m3",
+          "image": "https://www.digitalhealth.net/wp-content/uploads/2022/10/Medicines-Management-Header.jpg",
+          "name": "Acetaminophen",
+          "price": 7.99,
+          "companyName": "Tylenol"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+      "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
+      "title": "Bed Facility",
+      "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+      "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive.",
+      "beds": [
+        {
+          "id": "b1",
+          "image": "https://healthway.com.bd/media/images/Hospital_Bed_a6k_4.original.jpegquality-30.format-webp.webp",
+          "type": "General Ward",
+          "pricePerHour": 5,
+          "pricePerDay": 120
+        },
+        {
+          "id": "b2",
+          "image": "https://healthway.com.bd/media/images/Hospital_Bed_a6k_4.original.jpegquality-30.format-webp.webp",
+          "type": "Semi-Private Room",
+          "pricePerHour": 10,
+          "pricePerDay": 250
+        },
+        {
+          "id": "b3",
+          "image": "https://healthway.com.bd/media/images/Hospital_Bed_a6k_4.original.jpegquality-30.format-webp.webp",
+          "type": "Private Room",
+          "pricePerHour": 20,
+          "pricePerDay": 500
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+      "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
+      "title": "Total Care",
+      "name": "Full Body Check-up",
+      "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+      "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
+    }
+  ]
+}
