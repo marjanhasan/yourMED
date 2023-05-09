@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#1A1919] py-16">
@@ -16,22 +16,16 @@ const Footer = () => {
               Our Hospital Management Website is your gateway to top-notch
               healthcare services.
             </p>
-            <div className="flex justify-center md:justify-start gap-2 mt-2">
-              <img
-                src="facebook.png"
-                alt=""
-                className="h-6 w-6 lg:h-10 lg:w-10"
-              />
-              <img
-                src="twitter.png"
-                alt=""
-                className="h-6 w-6 lg:h-10 lg:w-10"
-              />
-              <img
-                src="instagram.png"
-                alt=""
-                className="h-6 w-6 lg:h-10 lg:w-10"
-              />
+            <div className="flex justify-center md:justify-start gap-2 mt-4">
+              <span className="p-4 bg-blue-500 text-white rounded-full text-center text-xl">
+                <FaFacebookF />
+              </span>
+              <span className="p-4 bg-blue-500 text-white rounded-full text-center text-xl">
+                <FaTwitter />
+              </span>
+              <span className="p-4 bg-blue-500 text-white rounded-full text-center text-xl">
+                <FaInstagram />
+              </span>
             </div>
           </div>
           <div className="flex flex-col items-center">

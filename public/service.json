@@ -1,32 +1,96 @@
 [
   {
+    "id": 1,
     "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
     "title": "Free Checkup",
-    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services."
+    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+    "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
   },
   {
-    "logo": "https://cdn-icons-png.flaticon.com/512/438/438506.png",
+    "id": 2,
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
     "title": "24/7 Ambulance",
-    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services."
+    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+    "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
   },
   {
-    "logo": "https://cdn-icons-png.flaticon.com/512/1998/1998087.png",
+    "id": 3,
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
     "title": "Experts Consultancy",
-    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services."
+    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+    "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
   },
   {
-    "logo": "https://cdn-icons-png.flaticon.com/512/2849/2849198.png",
+    "id": 4,
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
     "title": "Medicines",
-    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services."
+    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+    "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive.",
+    "medicines": [
+      {
+        "id": 1,
+        "image": "https://www.digitalhealth.net/wp-content/uploads/2022/10/Medicines-Management-Header.jpg",
+        "name": "Aspirin",
+        "price": 10.99,
+        "companyName": "Bayer"
+      },
+      {
+        "id": 2,
+        "image": "https://www.digitalhealth.net/wp-content/uploads/2022/10/Medicines-Management-Header.jpg",
+        "name": "Ibuprofen",
+        "price": 8.99,
+        "companyName": "Advil"
+      },
+      {
+        "id": 3,
+        "image": "https://www.digitalhealth.net/wp-content/uploads/2022/10/Medicines-Management-Header.jpg",
+        "name": "Acetaminophen",
+        "price": 7.99,
+        "companyName": "Tylenol"
+      }
+    ]
   },
   {
-    "logo": "https://cdn-icons-png.flaticon.com/512/2849/2849198.png",
+    "id": 5,
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
     "title": "Bed Facility",
-    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services."
+    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+    "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive.",
+    "beds": [
+      {
+        "id": 1,
+        "image": "https://healthway.com.bd/media/images/Hospital_Bed_a6k_4.original.jpegquality-30.format-webp.webp",
+        "type": "General Ward",
+        "pricePerHour": 5,
+        "pricePerDay": 120
+      },
+      {
+        "id": 2,
+        "image": "https://healthway.com.bd/media/images/Hospital_Bed_a6k_4.original.jpegquality-30.format-webp.webp",
+        "type": "Semi-Private Room",
+        "pricePerHour": 10,
+        "pricePerDay": 250
+      },
+      {
+        "id": 3,
+        "image": "https://healthway.com.bd/media/images/Hospital_Bed_a6k_4.original.jpegquality-30.format-webp.webp",
+        "type": "Private Room",
+        "pricePerHour": 20,
+        "pricePerDay": 500
+      }
+    ]
   },
   {
-    "logo": "https://cdn-icons-png.flaticon.com/512/2849/2849198.png",
+    "id": 6,
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "image": "https://5.imimg.com/data5/QC/DL/GLADMIN-33165366/basic-health-checkup-package-500x500.jpg",
     "title": "Total Care",
-    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services."
+    "description": "Our Hospital Management Website is your gateway to top-notch healthcare services.",
+    "details": "At yourMED, we believe that access to quality healthcare is a basic human right. That's why we offer free checkups to members of our community who are in need. Our free checkups are designed to provide basic medical assessments and screenings to help individuals maintain good health and prevent serious health issues.Our free checkup services include a range of medical evaluations, including physical exams, blood pressure checks, blood sugar tests, and general health advice. These services are provided by our experienced team of healthcare professionals who are dedicated to helping individuals lead healthy and happy lives.To schedule your free checkup, simply fill out our online appointment form or give us a call. We will do our best to schedule your appointment at a time that is convenient for you. We believe that everyone deserves access to quality healthcare, and we are committed to providing our community with the care they need to stay healthy and thrive."
   }
 ]

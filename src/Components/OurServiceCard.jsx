@@ -1,8 +1,9 @@
 import React from "react";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const OurServiceCard = ({ singleInfo }) => {
+  const navigate = useNavigate();
   return (
     <div className="bg-cyan-50 border-2 border-cyan-600 transition duration-200 rounded-md  flex flex-col justify-center py-6">
       <div className="py-6 px-6">
@@ -17,12 +18,13 @@ const OurServiceCard = ({ singleInfo }) => {
         <p className="text-base text-gray-500 md:text-lg mt-1">
           {singleInfo.description}
         </p>
-        <Link to="about">
-          <button className="btn-line mt-3">
-            Learn More{" "}
-            <ArrowRightCircleIcon className="h-6 w-6 text-cyan-800 ml-2" />
-          </button>
-        </Link>
+        <button
+          className="btn-line mt-3"
+          onClick={() => navigate(`services/${singleInfo.id}`)}
+        >
+          Learn More{" "}
+          <ArrowRightCircleIcon className="h-6 w-6 text-cyan-800 ml-2" />
+        </button>
       </div>
     </div>
   );

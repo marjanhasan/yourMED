@@ -40,14 +40,6 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="orders"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Orders
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="blog"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
@@ -139,16 +131,6 @@ const Header = () => {
                     </li>
                     <li>
                       <NavLink
-                        to="orders"
-                        className={({ isActive }) =>
-                          isActive ? "active" : "default"
-                        }
-                      >
-                        Orders
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
                         to="blog"
                         className={({ isActive }) =>
                           isActive ? "active" : "default"
@@ -167,26 +149,22 @@ const Header = () => {
                         About Us
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink
-                        to="login"
-                        className={({ isActive }) =>
-                          isActive ? "active" : "default"
-                        }
-                      >
-                        Login
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="register"
-                        className={({ isActive }) =>
-                          isActive ? "active" : "default"
-                        }
-                      >
-                        Register
-                      </NavLink>
-                    </li>
+                    {user ? (
+                      <button onClick={handleLogOut} className="">
+                        Log Out
+                      </button>
+                    ) : (
+                      <li>
+                        <NavLink
+                          to="login"
+                          className={({ isActive }) =>
+                            isActive ? "active" : "default"
+                          }
+                        >
+                          Login
+                        </NavLink>
+                      </li>
+                    )}
                   </ul>
                 </nav>
               </div>

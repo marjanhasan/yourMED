@@ -11,9 +11,10 @@ import Appointment from "./Components/Appointment";
 import DoctorDetails from "./Components/DoctorDetails";
 import Login from "./Components/Login";
 import Register from "./Components/Register";
-import Orders from "./Components/Orders";
 import AuthProviders from "./Providers/AuthProviders";
 import PrivateRoutes from "./routes/PrivateRoutes";
+import Others from "./Components/Others";
+import ServiceDetails from "./Components/ServiceDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,10 +30,10 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "orders",
+        path: "others",
         element: (
           <PrivateRoutes>
-            <Orders />
+            <Others />
           </PrivateRoutes>
         ),
       },
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/doctordetails/:id",
         element: <DoctorDetails />,
+      },
+      {
+        path: "/services/:id",
+        element: <ServiceDetails />,
       },
       {
         path: "login",
