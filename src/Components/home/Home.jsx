@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
-import ServiceCategory from "./ServiceCategory";
-import OurService from "./OurService";
-import Doctors from "./Doctors";
-import ClientsReview from "./ClientsReview";
+import ServiceCategory from "./serviceCategory/ServiceCategory";
+import OurService from "./ourService/OurService";
+import Doctors from "./doctors/Doctors";
+import ClientsReview from "./review/ClientsReview";
 
 const Home = () => {
   return (
@@ -55,7 +55,7 @@ const Home = () => {
       {/* Available service category section  */}
       <ServiceCategory />
       {/* Our service section  */}
-      <OurService></OurService>
+      <OurService />
       {/* doctors list section  */}
       <Doctors />
       {/* clients review section  */}

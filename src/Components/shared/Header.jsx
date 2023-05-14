@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
-import { AuthContext } from "../Providers/AuthProviders";
+import { AuthContext } from "../../Providers/AuthProviders";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -4,16 +4,15 @@ import App from "./App";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ErrrorPage from "./Components/ErrrorPage";
-import Home from "./Components/Home";
 import About from "./Components/About";
-import Appointment from "./Components/Appointment";
-import DoctorDetails from "./Components/DoctorDetails";
-import Login from "./Components/Login";
-import Register from "./Components/Register";
 import AuthProviders from "./Providers/AuthProviders";
 import PrivateRoutes from "./routes/PrivateRoutes";
-import Others from "./Components/Others";
-import ServiceDetails from "./Components/ServiceDetails";
+import Home from "./Components/home/Home";
+import Login from "./Components/login/Login";
+import Register from "./Components/login/Register";
+import Appointment from "./Components/appointment/Appointment";
+import ServiceDetails from "./Components/home/serviceCategory/serviceDetails/ServiceDetails";
+import DoctorDetails from "./Components/home/doctors/DoctorDetails";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,14 +22,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      },
-      {
-        path: "others",
-        element: (
-          <PrivateRoutes>
-            <Others />
-          </PrivateRoutes>
-        ),
       },
       {
         path: "appointment",
